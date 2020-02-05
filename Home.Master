@@ -1,0 +1,30 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Home.master.cs" Inherits="OnlineTrainTicketBookingApp.Home" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    
+</head>
+<body>
+    <form id="homeID" runat="server">
+        <div>
+            <div>
+                <h1 style="text-align: center; background-color: snow; font-style: italic">Bon Voyage</h1>
+                <span style="margin-left:710px">
+                    <asp:Button ID="startID" runat="server" Text="Home" Onclick="GoToHome" BackColor="aqua" BorderWidth="0" />
+                    &nbsp;
+                    <asp:Button ID="signInID" runat="server" Text="SignIn"  Onclick="GoToLogin" BackColor="aqua" BorderWidth="0"/>
+                    &nbsp;
+                    <asp:Button ID="signUpID" runat="server" Text="SignUp"  Onclick="GoToSignUp" BackColor="aqua" BorderWidth="0"/>
+                    &nbsp;                    
+                </span>                
+        </div>
+        <asp:ContentPlaceHolder ID="ContentPlaceHolder" runat="server"></asp:ContentPlaceHolder>
+        </div>
+    </form>
+</body>
+</html>
